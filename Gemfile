@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 ruby "3.1.3"
 
-gem "rails", "~> 6.0"
+gem "rails", "~> 7.0", ">= 7.0.0"
 
 # hacks for rails6 + ruby 3.1
 gem 'net-imap', require: false
@@ -37,9 +37,9 @@ group :development, :test do
   gem "pry-byebug"
   gem "rubocop"
   gem "rubocop-discourse"
-  gem "rubocop-performance"
-  gem "rubocop-rails"
-  gem "rubocop-rspec"
+  gem "rubocop-performance", ">= 1.24.0"
+  gem "rubocop-rails", ">= 2.30.0"
+  gem "rubocop-rspec", ">= 3.5.0"
   gem "ruby-prof"
   gem "sqlite3"
 end
