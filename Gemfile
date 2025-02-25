@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 ruby "3.1.3"
 
-gem "rails", "~> 6.0"
+gem "rails", "~> 7.0", ">= 7.0.0"
 
 # hacks for rails6 + ruby 3.1
 gem 'net-imap', require: false
@@ -17,7 +17,7 @@ gem "octokit"
 gem "puma"
 
 gem "diffy"
-gem "nokogiri"
+gem "nokogiri", ">= 1.18.3"
 gem "rss"
 
 # Assets
@@ -36,7 +36,7 @@ group :development, :test do
   gem "listen"
   gem "pry-byebug"
   gem "rubocop"
-  gem "rubocop-discourse"
+  gem "rubocop-discourse", ">= 3.10.0"
   gem "rubocop-performance"
   gem "rubocop-rails"
   gem "rubocop-rspec"
