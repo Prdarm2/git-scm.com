@@ -6,7 +6,7 @@ ruby "3.1.3"
 gem "rails", "~> 6.0"
 
 # hacks for rails6 + ruby 3.1
-gem 'net-imap', require: false
+gem 'net-imap', '>= 0.3.9', require: false
 gem 'net-pop', require: false
 gem 'net-smtp', require: false
 
@@ -49,7 +49,7 @@ group :test do
   gem "fabrication"
   gem "factory_bot_rails"
   gem "rails-controller-testing"
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 8.0.0"
   gem "shoulda"
   gem "vcr"
   gem "webmock"
