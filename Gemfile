@@ -11,9 +11,9 @@ gem 'net-pop', require: false
 gem 'net-smtp', require: false
 
 gem "asciidoctor", "~> 2.0.0"
-gem "elasticsearch", "2.0.2"
+gem "elasticsearch", "5.0.0"
 gem "iso8601"
-gem "octokit"
+gem "octokit", ">= 4.23.0"
 gem "puma"
 
 gem "diffy"
